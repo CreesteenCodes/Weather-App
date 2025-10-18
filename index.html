@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climatr</title>
+    <link href="https://unpkg.com/ionicons@7.1.0/dist/ionicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="card" id="weatherCard">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search City" />
+                <button id="searchBtn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="placeholder" id="placeholder">
+                <img src="static/images/image-1.png" alt="Search City" />
+                <h2>Search City</h2>
+                <p>Find out the weather conditions of the city</p>
+            </div>
+
+            <div class="weather-info hidden" id="weatherInfo">
+                <div class="header">
+                    <h3><ion-icon name="location-outline"></ion-icon> <span id="cityName"></span></h3>
+                    <p id="date"></p>
+                </div>
+
+                <div class="main-weather">
+                    <h1 id="temperature"></h1>
+                    <div class="condition-container">
+                        <ion-icon id="weatherIcon" name="partly-sunny-outline" class="weather-icon"></ion-icon>
+                        <p id="condition"></p>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div>
+                        <ion-icon name="rainy-outline"></ion-icon>
+                        <div><p>Precipitation</p><span id="precipitation"></span></div>
+                    </div>
+                    <div>
+                        <ion-icon name="water-outline"></ion-icon>
+                        <div><p>Humidity</p><span id="humidity"></span></div>
+                    </div>
+                    <div>
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        <div><p>Wind</p><span id="wind"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
